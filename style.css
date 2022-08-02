@@ -1,0 +1,143 @@
+.band {
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+  .card {
+    background: white;
+    font-family: arial,helvetica;
+    text-decoration: none;
+    color: #444;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+
+  .card article {
+    padding: 20px;
+  }
+   
+  .card h1 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+   
+  .card p { 
+      font-size: 15px ;
+    flex: 1;
+    line-height: 1.4;
+    text-align: left;
+  }
+   
+  .card span {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #999;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+
+  .card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .card a {
+      color: #38B0EB;
+      text-decoration: none;
+  }
+
+  .card a:hover {
+    color: #2f92c4;
+}
+
+  @media only screen and (min-width: 500px) {
+    .band {
+      grid-template-columns: 1fr 1fr;
+    }  
+  }
+
+  @media only screen and (min-width: 850px) {
+    .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .button {
+    padding-top: 20px;
+}
+
+  .simbol{
+    text-indent: 10px;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+  }
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .popup .close:hover {
+    color: #ffffff;
+  }
+
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+  .ava {
+    padding: 10px;;
+  }
+
+  .ava img {
+      width: 12%;
+  }
